@@ -9,7 +9,8 @@ built-in cmds.
 Generic.
 
 -version                                           // return the current version of OpenBox.<br>
--exec [program_path] [parameter]                   // execute external sh basic program.
+-exec [program_path] [parameter]                   // execute external sh basic program.<br>
+-clear                                             // clear the terminal.
 
 Dump.
 
