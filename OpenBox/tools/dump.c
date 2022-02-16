@@ -4,7 +4,7 @@ dump.session = [];
 dump.add = function(address)
   if address.indexOf(":") then
     ip = address.split(":")[0];
-    if not is_valid_ip(ip) return "ip is not valid."
+    if not is_valid_ip(ip) then return "ip is not valid."
     port = address.split(":")[1];
     if typeof(port.to_int) != "number" then return "port expect a number."
     session = metax.net_use(ip,port.to_int);
