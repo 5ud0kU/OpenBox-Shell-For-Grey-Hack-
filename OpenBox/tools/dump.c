@@ -4,11 +4,16 @@ dump.session = [];
 dump.add = function(address)
   if address.indexOf(":") then
     ip = address.split(":")[0];
+    if not is_valid_ip(ip) return "ip is not valid."
     port = address.split(":")[1];
+    if typeof(port.to_int) != "number" then return "port expect a number."
     session = metax.net_use(ip,port.to_int);
+    if session == null or session == "null" then return "net session failed.";
   else
     ip = address;
+    if not is_valid_ip(ip) then return "ip is not valid";
     session = metax.net_use(ip);
+    if session == null or session == "null" then return "net session failed.";
   end if
   d = session.dump_lib;
   x = {"address":address,"dump":d,"name":d.lib_name,"version":d.version};

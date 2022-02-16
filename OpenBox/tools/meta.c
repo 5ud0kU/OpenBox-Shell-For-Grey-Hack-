@@ -61,7 +61,7 @@ meta.sessions = function()
 	if meta.session.len < 1 then return "theres no active session.";
 	text = "ADR PLD" + char(10);
 	for i in range(0,meta.session.len -1)
-		text = text + meta.session[i].address + " " + str(meta.session[i].drop.split(char(10)).len);
+		text = text + meta.session[i].address + " " + str(meta.session[i].drop.split(char(10)).len -3);
 	end for
 	text = format_columns(text);
 	return text;
@@ -76,7 +76,7 @@ meta.export = function()
 	get_shell.host_computer.touch(current_path,"meta.export");
 	data = "";
 	for i in range(0,meta.session.len -1)
-	data = data + meta.session[i].drop() + char(10);
+		data = data + meta.session[i].drop() + char(10);
 	end for
 	x = current_path + "/meta.export";
 	get_shell.host_computer.File(x).set_content(data);
