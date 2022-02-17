@@ -6,7 +6,7 @@
 
 //The h files are made to not be compiled, do so if needed.
 //It simpler to modify the open box. It has been thinked that way.
-//The c files are considered as to be compiled. 
+//The c files are considered as to be compiled.
 
 ///IMPORTANT DONT FORGET TO CHANGE THE PATHING.
 
