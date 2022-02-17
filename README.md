@@ -5,6 +5,8 @@ The open box shell , is a hacking shell for the game Grey Hack.It's as been made
 
 ![sudo](https://user-images.githubusercontent.com/90292445/154203974-625f0934-48e4-4f02-afd6-546e6021d1b0.png)
 
+Note: I'm currently cleaning some weirdo bugs :) !
+
 
 built-in cmds.
 
