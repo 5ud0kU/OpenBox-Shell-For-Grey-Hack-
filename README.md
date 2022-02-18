@@ -8,6 +8,8 @@ when exporting project dont forget to tell to your users to do the same.
 
 If you have interest on the under hood of this tool please take a time to visit the website of the lib it make uses at https://minervaowllib.com/ 
 
+Note: Dont forget to change the pathing of the main.c to the one where you decided to install the project, before building it.
+
 ![it](https://user-images.githubusercontent.com/90292445/154630594-fdbeb2d9-2042-4819-94dd-eb3cdf19abdb.png)
 
 built-in cmds.
