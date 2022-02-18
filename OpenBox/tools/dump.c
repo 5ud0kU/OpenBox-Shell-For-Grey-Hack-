@@ -60,7 +60,7 @@ dump.sessions = function()
 end function
 
 dump.self = function()
-  return dump;
+  return str(dump);
 end function
 
 dump.export = function()

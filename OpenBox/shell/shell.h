@@ -1,5 +1,5 @@
 version = function()
-  print("OpenBox version 0.1");
+  print("OpenBox version 0.2.3");
 end function
 
 chain = [];
@@ -43,6 +43,18 @@ exec = function(cmdline,path)
       globals.chain.push(@meta.export());
     else if cmds[i].arg == "-overflow.test" then
       globals.chain.push(@overflow.test(cmds[i].childs[0],cmds[i].childs[1],cmds[i].childs[2],cmds[i].childs[3]));
+    else if cmds[i].arg == "-overflow.craft" then
+      globals.chain.push(@overflow.craft(cmds[i].childs[0],cmds[i].childs[1],cmds[i].childs[2],cmds[i].childs[3]));
+    else if cmds[i].arg == "-overflow.play" then
+      globals.chain.push(@overflow.play());
+    else if cmds[i].arg == "-overflow.drop" then
+      globals.chain.push(@overflow.drop());
+    else if cmds[i].arg == "-overflow.discard" then
+      globals.chain.push(@overflow.discard(cmds[i].childs[0]));
+    else if cmds[i].arg == "-overflow.self" then
+      globals.chain.push(@overflow.self());
+    else if cmds[i].arg == "-overflow.export" then
+      globals.chain.push(@overflow.export());
     else
       globals.chain.push(cmds[i].arg + " as been validated, but no module was pointed.");
     end if

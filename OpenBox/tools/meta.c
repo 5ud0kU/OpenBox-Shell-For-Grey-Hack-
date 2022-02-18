@@ -71,7 +71,7 @@ meta.sessions = function()
 end function
 
 meta.self = function()
-	return meta;
+	return str(meta);
 end function
 
 meta.export = function()
