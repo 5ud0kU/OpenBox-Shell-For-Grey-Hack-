@@ -24,12 +24,12 @@ meta.scan = function(index)
   x = dump.session[index.to_int];
   mems = metax.scan(x.dump);
 
-  text = "ADR LIB VER MEM BUF" + char(10);
+  text = "IDX ADR LIB VER MEM BUF" + char(10);
   for i in range(0,mems.len -1)
     b = meta.parse(metax.scan_address(x.dump,mems[i]));
     if b.len > 0 then
       for e in range(0,b.len -1)
-        text = text + x.address + " " + x.name + " " + x.version + " " + mems[i] + " " + b[e] + char(10);
+        text = text + str(e) + " " + x.address + " " + x.name + " " + x.version + " " + mems[i] + " " + b[e] + char(10);
 			end for
 			text = text + char(10);
     end if
@@ -62,9 +62,9 @@ end function
 
 meta.sessions = function()
 	if meta.session.len < 1 then return "theres no active session.";
-	text = "ADR PLD" + char(10);
+	text = "IDX ADR PLD" + char(10);
 	for i in range(0,meta.session.len -1)
-		text = text + meta.session[i].address + " " + str(meta.session[i].drop.split(char(10)).len -3) + char(10);
+		text = text + str(i) + " " + meta.session[i].address + " " + str(meta.session[i].drop.split(char(10)).len -3) + char(10);
 	end for
 	text = format_columns(text);
 	return text;

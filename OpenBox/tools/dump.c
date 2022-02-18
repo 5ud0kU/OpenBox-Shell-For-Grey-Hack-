@@ -50,10 +50,10 @@ end function
 
 dump.sessions = function()
   if dump.session.len < 1 then return "theres no active session.";
-  text = "ADR DMP NME VER" + char(10);
+  text = "IDX ADR DMP NME VER" + char(10);
   for i in range(0,dump.session.len -1)
     card = dump.session[i];
-    text = text + card.address + " " + typeof(card.dump) + " " + card.name + " " + card.version + char(10);
+    text = text + str(i) + " " + card.address + " " + typeof(card.dump) + " " + card.name + " " + card.version + char(10);
   end for
   text = format_columns(text);
   return text;
