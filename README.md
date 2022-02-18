@@ -6,6 +6,8 @@ The open box shell , is a hacking shell for the game Grey Hack.It's as been made
 Note Important : if you use synapse for building your OpenBox dont forget to put the ../shell/args.config into ..myproject/bin/version/shell/args.config.
 when exporting project dont forget to tell to your users to do the same.
 
+If you have interest on the under hood of this tool please take a time to visit the website of the lib it make uses at https://minervaowllib.com/ 
+
 ![it](https://user-images.githubusercontent.com/90292445/154630594-fdbeb2d9-2042-4819-94dd-eb3cdf19abdb.png)
 
 built-in cmds.
