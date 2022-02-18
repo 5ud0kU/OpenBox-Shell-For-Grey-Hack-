@@ -8,9 +8,6 @@ when exporting project dont forget to tell to your users to do the same.
 
 ![it](https://user-images.githubusercontent.com/90292445/154630594-fdbeb2d9-2042-4819-94dd-eb3cdf19abdb.png)
 
-Note: I'm currently cleaning some weirdo bugs :) !
-
-
 built-in cmds.
 
 Generic.
