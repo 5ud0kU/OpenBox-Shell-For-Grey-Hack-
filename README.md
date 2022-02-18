@@ -6,7 +6,7 @@ The open box shell , is a hacking shell for the game Grey Hack.It's as been made
 Note Important : if you use synapse for building your OpenBox dont forget to put the ../shell/args.config into ..myproject/bin/version/shell/args.config.
 when exporting project dont forget to tell to your users to do the same.
 
-![sudo](https://user-images.githubusercontent.com/90292445/154203974-625f0934-48e4-4f02-afd6-546e6021d1b0.png)
+![it](https://user-images.githubusercontent.com/90292445/154630594-fdbeb2d9-2042-4819-94dd-eb3cdf19abdb.png)
 
 Note: I'm currently cleaning some weirdo bugs :) !
 
