@@ -40,10 +40,10 @@ Meta.
 
 Overflow.
 
-overflow.test [dump:index] [memory] [buffer] [extrakey]  // test a library and return the resulting exploit type.
-overflow.craft [dump:index] [memory] [buffer] [extrakey] // add a payload to the deck
-overflow.play                                            // play the deck and pass trough all payload card in it.
-overflow.drop                                            // display the deck.
-overflow.discard [deck:index]                            // remove a payload card from the deck.
-overflow.self                                            // return the map.
-overflow.export                                          // use to export the current deck.
+overflow.test [dump:index] [memory] [buffer] [extrakey]  // test a library and return the resulting exploit type.<br>
+overflow.craft [dump:index] [memory] [buffer] [extrakey] // add a payload to the deck.<br>
+overflow.play                                            // play the deck and pass trough all payload card in it.<br>
+overflow.drop                                            // display the deck.<br>
+overflow.discard [deck:index]                            // remove a payload card from the deck.<br>
+overflow.self                                            // return the map.<br>
+overflow.export                                          // use to export the current deck.<br>
