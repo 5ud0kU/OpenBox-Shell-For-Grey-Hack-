@@ -22,8 +22,8 @@ Generic.
 Dump.
 
 -dump.add [ip]:[option:port]                       // add a net session.<br>
--dump.del [index]                                  // remove the indexed element in the session list.<br>
--dump.drop [index]                                 // use to see a particular element with the given index.<br>
+-dump.del [dump:index]                                  // remove the indexed element in the session list.<br>
+-dump.drop [dump:index]                                 // use to see a particular element with the given index.<br>
 -dump.sessions                                     // display sessions.<br>
 -dump.self                                         // return the map it self.<br>
 -dump.export                                       // use to export in the current path the session information.
@@ -31,13 +31,19 @@ Dump.
 Meta.
 
 -meta.parse [text]                                 // parse metalib.dump_lib result.<br>
--meta.scan [dump_index]                            // scan a dumped service then add it to the meta session list.<br>
--meta.drop [index]                                 // use to see a particular element with the given index.<br>
--meta.del [index]                                  // remove the indexed element in the session list.<br>
+-meta.scan [dump:index]                            // scan a dumped service then add it to the meta session list.<br>
+-meta.drop [meta:index]                                 // use to see a particular element with the given index.<br>
+-meta.del [meta:index]                                  // remove the indexed element in the session list.<br>
 -meta.sessions                                     // display sessions.<br>
 -meta.self                                         // return the map it self.<br>
 -meta.export                                       // use to export in the current path the session information.
 
 Overflow.
 
-overflow.test [index] [memory] [buffer] [extrakey] // test a library and return the resulting exploit type.
+overflow.test [dump:index] [memory] [buffer] [extrakey]  // test a library and return the resulting exploit type.
+overflow.craft [dump:index] [memory] [buffer] [extrakey] // add a payload to the deck
+overflow.play                                            // play the deck and pass trough all payload card in it.
+overflow.drop                                            // display the deck.
+overflow.discard [deck:index]                            // remove a payload card from the deck.
+overflow.self                                            // return the map.
+overflow.export                                          // use to export the current deck.
