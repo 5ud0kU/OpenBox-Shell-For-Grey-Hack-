@@ -53,9 +53,11 @@ overflow.discard = function(index)
   if overflow.deck.len < 1 then return "theres no card in the deck.";
   if index.to_int < 0 or index.to_int > overflow.deck.len then return "index out of range.";
   overflow.deck.remove(index.to_int);
-  for i in range(0,overflow.deck.len -1)
-    overflow.deck[i].idx = str(overflow.deck[i].idx.to_int -1)
-  end for
+  if overflow.deck.len > 0 then
+    for i in range(0,overflow.deck.len -1)
+        overflow.deck[i].idx = str(overflow.deck[i].idx.to_int -1)
+     end for
+  end if   
   return "card been deleted!";
 end function
 
